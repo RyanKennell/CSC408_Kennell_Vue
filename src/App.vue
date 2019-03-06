@@ -10,11 +10,14 @@
 </template>
 
 <style lang="scss">
-  /* This is where we inport our custom CSS files */
-  @import './assets/styles/custom.css';
+/* Add Google Font */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+/* This is where we inport our custom CSS files */
+@import './assets/styles/custom.css';
 
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
