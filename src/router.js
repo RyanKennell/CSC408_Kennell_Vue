@@ -39,7 +39,7 @@ export default new Router({
     },
     {
       path: '/customer-details/:userId/rentals',
-      name: 'customer-rental',
+      name: 'customer-rentals',
       // component: CustomerRentals
       // route level code-splitting
       // this generates a separate chunk (customers.[hash].js) for this route
