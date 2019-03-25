@@ -31,7 +31,7 @@
     },
     methods: {
       read () {
-        let url = 'http://codeflare.tech/api/customers/' + this.id
+        let url = 'https://codeflare.tech/api/customers/' + this.id
         window.axios.get(url).then(({ data }) => {
           this.customer = data;
         })
