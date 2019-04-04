@@ -9,42 +9,29 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
-    },
-    {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
-    },
-    {
-      path: '/customers',
-      name: 'customers',
+      name: 'movies',
       // route level code-splitting
       // this generates a separate chunk (customers.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "customers" */ './views/Customer.vue')
+      component: () => import(/* webpackChunkName: "customers" */ './views/Movie.vue')
     },
     {
-      path: '/customer-details/:userId',
-      name: 'customer-details',
+      path: '/movies/:userId',
+      name: 'movie-details',
       // component: CustomerDetails
       // route level code-splitting
       // this generates a separate chunk (customers.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "customers" */ './views/CustomerDetails.vue')
+      component: () => import(/* webpackChunkName: "customers" */ './views/MovieDetails.vue')
     },
     {
-      path: '/customer-details/:userId/rentals',
-      name: 'customer-rentals',
+      path: '/movies/:userId/rentals',
+      name: 'movie-rentals',
       // component: CustomerRentals
       // route level code-splitting
       // this generates a separate chunk (customers.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "customers" */ './views/CustomerRentals.vue')
-    }
+      component: () => import(/* webpackChunkName: "customers" */ './views/MovieRentals.vue')
+    },
   ]
 })

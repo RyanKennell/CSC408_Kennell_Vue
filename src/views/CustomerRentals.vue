@@ -47,7 +47,7 @@
         },
         methods: {
             read() {
-                let url = 'https://codeflare.tech/api/customers/' + this.id + '/rentals'
+                let url = 'https://rckennell.com/api/customers/' + this.id + '/rentals'
                 window.axios.get(url).then(({data}) => {
                     this.customer_name = data[0].name;
 
