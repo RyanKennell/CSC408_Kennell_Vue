@@ -1,16 +1,13 @@
 <template>
-
-    <tr>
-        <td><img :src="this.imageUrl" class="thumbnail"></td>
-        <td>{{ title  }}</td>
-        <td>{{ rating }}</td>
-        <td>{{ length }}</td>
-
-        <td>
-            <div class="btn btn-sm btn-success"><router-link :to="'/movies/' + this.id">View</router-link></div>
-            <div class="btn btn-sm btn-dark"><router-link :to="'/movies/' + this.id + '/rentals'">Rentals</router-link></div>
-        </td>
-    </tr>
+        <div class="col-md-4 pb-5">
+            <div class="card shadow-lg" style="width: 50%;">
+                <img :src="this.imageUrl" class="thumbnail img-fluid rounded-lg">
+                <div class="card-body text-center">
+                    <div class="btn btn-sm btn-success"><router-link :to="'/movies/' + this.id">View</router-link></div>
+                    <div class="btn btn-sm btn-dark"><router-link :to="'/movies/' + this.id + '/rentals'">Rentals</router-link></div>
+                </div>
+            </div>
+        </div>
 </template>
 
 <script>

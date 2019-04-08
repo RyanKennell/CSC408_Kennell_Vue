@@ -1,11 +1,11 @@
 #nav {
-    background-color: #328eb2;
+    background-color: lightblue;
 }
 
 #footer {
     padding: 10px;
-    background-color: #328eb2;
-    color: #fffffd;
+    background-color: lightblue;
+    color: black;
 }
 
 .btn {

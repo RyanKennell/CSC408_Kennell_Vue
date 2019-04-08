@@ -1,18 +1,9 @@
 <template>
-    <div class="about pt-4 pb-3">
+    <div class="about pt-4 pb-5">
         <h1>Yellow Box Movies</h1>
 
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th></th>
-                <th>Title</th>
-                <th>Rating</th>
-                <th>Length</th>
-                <th>Actions</th>
-            </tr>
-            </thead>
-            <tbody>
+        <div class="row">
+
             <movie-component
                     v-for="(movie, index) in movies"
                     v-bind="movie"
@@ -21,8 +12,7 @@
                     @view="view"
                     @rentals="rentals"
             ></movie-component>
-			</tbody>
-        </table>
+        </div>
     </div>
 </template>
 <script>

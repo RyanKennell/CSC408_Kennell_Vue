@@ -33,5 +33,31 @@ export default new Router({
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "customers" */ './views/MovieRentals.vue')
     },
+    {
+      path: '/customers',
+      name: 'customers',
+      // route level code-splitting
+      // this generates a separate chunk (customers.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "customers" */ './views/Customer.vue')
+    },
+    {
+      path: '/customer-details/:userId',
+      name: 'customer-details',
+      // component: CustomerDetails
+      // route level code-splitting
+      // this generates a separate chunk (customers.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "customers" */ './views/CustomerDetails.vue')
+    },
+    {
+      path: '/customer-details/:userId/rentals',
+      name: 'customer-rentals',
+      // component: CustomerRentals
+      // route level code-splitting
+      // this generates a separate chunk (customers.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "customers" */ './views/CustomerRentals.vue')
+    }
   ]
 })

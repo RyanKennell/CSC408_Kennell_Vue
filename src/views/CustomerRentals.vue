@@ -35,7 +35,7 @@
         this.transaction = pivot
     }
 
-    import MovieRentalComponent from '@/components/MovieRentalComponent.vue'
+    import MovieRentalComponent from '@/components/CustomerRentalComponent.vue'
 
     export default {
         data() {
