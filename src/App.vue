@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
+      <h1 style="color: yellow">Yellow Bucket</h1>
       <router-link to="/">Home</router-link> |
       <router-link to="/Customers">Customers</router-link>
     </div>
